@@ -87,6 +87,15 @@ public class CommonUtils {
 
         return (bitMask & target) == bitMask;
     }
+
+    public static String getArrayAsString(int[] array) {
+        StringBuilder printResult = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            printResult.append(array[i]);
+            printResult.append(" ");
+        }
+        return printResult.toString();
+    }
 }
 
 
